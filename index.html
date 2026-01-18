@@ -1,22 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- Author Details -->
-  <meta name="author" content="LINGKON DASH">
-  <meta name="description" content="Assignment Two">
+  <meta name="author" content="LINGKON DASH" />
+  <meta name="description" content="Assignment Two" />
+  <!-- font awsome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <title>Tech Wave</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header>
-    <ul>
-      <li><img src="assets/TechWave.png" alt="TechWave Logo"></li>
-    </ul>
+    <nav class="navbar flex">
+      <h1 class="brand">Tech<span class="wave">Wave</span></h1>
+      <ul class="flex hidden nav_links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Episodes</a></li>
+        <li><a href="#">Host</a></li>
+      </ul>
+      <button type="submit" class="gradient_btn hidden">
+        Subscribe <i class="fa-solid fa-arrow-right"></i>
+      </button>
+      <a href="#" class="menu_icon"><img src="assets/hamburger-menu.png" alt="Menu" /></a>
+    </nav>
+
+    <section class="hero flex">
+    <div class="hero_container">
+      <div class="banner">
+        <div class="">
+          <img src="assets/hero-circle.png" alt="MicroPhone Background" width="100%">
+        </div>
+        <div class="microphone">
+          <img src="assets/microphone.png" alt="MicroPhone" width="100%">
+        </div>
+        <button type="submit" class="challenge_btn">NEW</button>
+      </div>
+      <div class="hero_content">
+        <h2 class="">TechWave</h2>
+        <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+        <div>
+          <button type="submit" class="gradient_btn">
+            <img src="assets/spotify_btn.png" alt="Spotify"> Listen on Spotify
+          </button>
+          <button type="submit" class="green_btn hero_btn">
+            <img src="assets/envelop.png" alt="Envelop"> Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+    </section>
   </header>
   <script src="main.js"></script>
 </body>
+
 </html>
