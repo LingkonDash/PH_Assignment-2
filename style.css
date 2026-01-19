@@ -117,7 +117,7 @@ a {
   margin: 0 auto;
 }
 .microphone_bg {
-  animation: spin 2s linear infinite;
+  animation: spin 1.5s linear infinite;
 }
 @keyframes spin {
   from {
@@ -250,16 +250,18 @@ a {
   padding: 2.5rem 1.25rem;
 }
 .feature_sec .fetures {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
   gap: 1.8rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .fetures .feture_ep {
   border-radius: 24px;
-  width: 90%;
+  max-width: 90%;
+  height: 100%;
   background-color: #250D44;
 }
 .video {
@@ -396,14 +398,9 @@ a {
   .podcast .podcast_rating {
     margin-top: 3rem;
     margin-bottom: 4rem;
-  } 
-  .grid_sec, .feature_sec {
-    padding: 5rem 6rem;
   }
-  .fetures .feture_ep {
-    border-radius: 24px;
-    max-width: 340px;
-    height: 440px;
+  .feature_sec .fetures {
+    grid-template-columns: repeat(2,1fr);
   }
 }
 @media screen and (min-width: 992px) {
@@ -464,7 +461,7 @@ a {
     grid-row: span 1;
   }
   .feature_sec .fetures {
-    gap: 30px;
+    grid-template-columns: repeat(3,1fr);
   }
   .host_sec {
     padding: 0 8.5rem 6.5rem;
