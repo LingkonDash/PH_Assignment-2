@@ -25,6 +25,7 @@ p {
   color: var(--text-color);
   font-size: 0.9rem;
   opacity: 70%;
+  line-height: 24px;
 }
 
 ul {
@@ -174,7 +175,7 @@ a {
 .podcast .podcast_rating {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  place-items: center);
+  place-items: center;
   gap: 2.5rem;
   margin: 2.5rem auto 0;
 }
@@ -194,7 +195,35 @@ a {
 .ratings p {
   text-transform: uppercase;
 }
-
+.grid_sec {
+  padding: 2.5rem 1.25rem;
+  background-color: #230E3D;
+}
+.grid_sec .grid_head {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.grid_sec .grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+.grid .child {
+  background-color: rgba(53, 17, 101, 0.4);
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  border-radius: 1.5rem;
+}
+.grid .child h3 {
+  color: var(--text-color);
+  font-size: 1.375rem;
+  font-weight: bold;
+}
 
 /* media queries */
 @media screen and (min-width: 576px) {
@@ -205,10 +234,20 @@ a {
     margin-bottom: 2rem;
   }
   .hero {
-  background-position: center;
+  background-position: center 30px;
   }
   .podcast {
-    padding: 2.5rem;
+    padding: 2.5rem 5rem;
+  }
+  .podcast .podcast_content {
+    padding-bottom: 4rem;
+  }
+  .podcast .podcast_rating {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  } 
+  .grid_sec {
+    padding: 5rem 6rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -216,11 +255,32 @@ a {
   .hero .banner {
     width: 60%;
   }
+  .hero {
+    background-position: center -1.5rem;
+  }
+  .hero_content h2 {  
+    font-size: 3rem;
+  }
   .podcast {
-    padding: 2.5rem 8rem;
+    padding: 3.2rem 8.5rem;
+  }
+  .podcast .podcast_content {
+    padding-bottom: 4.5rem;
+  }
+  .podcast_content h2 {
+    font-size: 2.5rem;
   }
   .podcast .podcast_rating {
     grid-template-columns: repeat(4, 1fr);
     max-width: 1200px;
+    margin-top: 4.5rem;
+    margin-bottom: 6.5rem;
   } 
+  .grid_sec {
+    padding: 6.5rem 8.5rem;
+  }
+  .grid_sec .grid_head {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
 }
