@@ -58,7 +58,17 @@ a {
   gap: 8px;
   cursor: pointer;
 }
-
+.brand {
+  font-weight: bold;
+  color: var(--text-color);
+  font-size: 2.2rem;
+}
+.brand .wave {
+  background: linear-gradient(10deg, #F7E93F, #fb09e7, #590099);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 .flex { display: flex; }
 .hidden { display: none; }
 
@@ -76,17 +86,6 @@ a {
   align-items: center;
   border-bottom: 1px solid #412567;
   padding: 1.25rem;
-}
-.navbar .brand {
-  font-weight: bold;
-  color: var(--text-color);
-  font-size: 2.2rem;
-}
-.navbar .brand .wave {
-  background: linear-gradient(10deg, #F7E93F, #fb09e7, #590099);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }
 .navbar .nav_links {
   justify-content: center;
@@ -313,6 +312,42 @@ a {
 .logos img {
   width: 100%;
 }
+.footer {
+  padding: 2.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  background-image: url(assets/footer-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 150% 90%;
+}
+.footer h2 {
+  font-size: 3rem;
+}
+.footer .footer_links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.footer_links p {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+.footer .footer_text p {
+  text-align: center;
+  font-weight: 300;
+}
 
 
 
@@ -347,6 +382,9 @@ a {
   }
 }
 @media screen and (min-width: 992px) {
+  .brand {
+    font-size: 3rem;
+  }
   .navbar { margin-bottom: 4rem;}
   .hero .banner {
     width: 60%;
@@ -406,5 +444,14 @@ a {
   }
   .host_content .host_logos {
     justify-content: flex-start;
+  }
+  .footer {
+    background-size: 100% 100%;
+  }
+  .footer h2 {
+    font-size: 4rem;
+  }
+  .footer .footer_links {
+    gap: 2.5rem;
   }
 }
