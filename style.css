@@ -283,4 +283,18 @@ a {
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
   }
+  .grid_sec .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem;
+  }
+  .grid .child1 {
+    grid-row: span 2;
+  }
+  .child2, .child3, .child4 {
+    grid-column: span 2;
+  }
+  .child5 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
 }
