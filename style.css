@@ -21,6 +21,12 @@ body {
   margin: 0 auto;
 }
 
+p {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  opacity: 70%;
+}
+
 ul {
   list-style: none;
 }
@@ -41,6 +47,7 @@ a {
   padding: 12px 16px;
   text-align: center;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .btn_reset {
@@ -48,6 +55,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
 }
 
 .flex { display: flex; }
@@ -78,14 +86,14 @@ a {
 }
 .hero {
   background-image: url(assets/hero-bg.png);
-  background-position: center center;
+  background-position: center 4rem;
   background-repeat: no-repeat;
   background-size: contain;
 
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  gap: 1.5rem;
   padding: 40px 20px;
 }
 
@@ -94,6 +102,9 @@ a {
   width: 50%;
   max-width: 250px;
   margin: 0 auto;
+}
+.microphone_bg {
+  
 }
 .microphone {
   position: absolute;
@@ -114,6 +125,7 @@ a {
   background-color: var(--green-text);
   box-shadow: 0 3px 27px rgba(0, 255, 136, 0.5);
   padding: 8px 16px;
+  cursor: pointer;
 }
 .hero .hero_content {
   flex-direction: column;
@@ -128,9 +140,6 @@ a {
   font-weight: bolder;
 }
 .hero_content p {
-  color: var(--text-color);
-  font-size: 0.9rem;
-  font-weight: 200;
   margin: 8px 0 24px;
 }
 .hero_content .btns {
@@ -149,6 +158,17 @@ a {
   border-radius: 10000px;
 }
 
+.podcast {
+  text-align: center;
+  padding: 2.5rem 1.25rem;
+}
+.podcast h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+
 
 /* media queries */
 @media screen and (min-width: 576px) {
@@ -157,6 +177,9 @@ a {
   .navbar { 
     justify-content: space-around;
     margin-bottom: 2rem;
+  }
+  .hero {
+  background-position: center;
   }
 }
 @media screen and (min-width: 992px) {
