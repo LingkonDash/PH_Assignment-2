@@ -23,7 +23,7 @@ body {
 
 p {
   color: var(--text-color);
-  font-size: 0.9rem;
+  font-size: 1rem;
   opacity: 70%;
   line-height: 24px;
 }
@@ -214,6 +214,7 @@ a {
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
   border-radius: 1.5rem;
+  align-content: center;
 }
 .grid .child h3 {
   color: var(--text-color);
@@ -229,12 +230,12 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.8rem;
 }
 
 .fetures .feture_ep {
   border-radius: 24px;
-  width: 80%;
+  width: 90%;
   background-color: #250D44;
 }
 .video {
@@ -268,6 +269,51 @@ a {
   font-weight: 600;
   opacity: 100;
 }
+.host_sec {
+  padding: 2.5rem 1.25rem;
+}
+.host_sec .container {
+  padding: 1.5rem;
+  border-radius: 24px;
+  background-color: rgba(53, 17, 101, 0.4);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container .host_img {
+  border-radius: 50%;
+}
+.container .host_content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin: 16px 0;
+}
+.host_content .host_logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1rem;
+}
+.host_logos .logos {
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #533C72;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.logos img {
+  width: 100%;
+}
+
 
 
 /* media queries */
@@ -346,5 +392,19 @@ a {
   }
   .feature_sec .fetures {
     gap: 30px;
+  }
+  .host_sec {
+    padding: 0 8.5rem 6.5rem;
+  }
+  .host_sec .container {
+    flex-direction: row;
+    text-align: left;
+    gap: 24px;
+  }
+  .host_content h3 {
+    font-size: 2rem;
+  }
+  .host_content .host_logos {
+    justify-content: flex-start;
   }
 }
