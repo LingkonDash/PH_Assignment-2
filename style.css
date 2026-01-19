@@ -62,6 +62,14 @@ a {
 .flex { display: flex; }
 .hidden { display: none; }
 
+.section_head {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
 /* nonshared styles */
 .navbar {
   justify-content: space-between;
@@ -166,12 +174,7 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.281);
   padding-bottom: 2.5rem;
 }
-.podcast_content h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--text-color);
-  margin-bottom: 16px;
-}
+
 .podcast .podcast_rating {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -184,7 +187,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
   text-align: center;
 }
 .ratings h2 {
@@ -198,13 +201,6 @@ a {
 .grid_sec {
   padding: 2.5rem 1.25rem;
   background-color: #230E3D;
-}
-.grid_sec .grid_head {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--text-color);
-  margin-bottom: 1rem;
-  text-align: center;
 }
 .grid_sec .grid {
   display: grid;
@@ -224,6 +220,56 @@ a {
   font-size: 1.375rem;
   font-weight: bold;
 }
+
+.feature_sec {
+  padding: 2.5rem 1.25rem;
+}
+.feature_sec .fetures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fetures .feture_ep {
+  border-radius: 24px;
+  max-width: 340px;
+  height: 440px;
+  background-color: #250D44;
+}
+.video {
+  width: 100%;
+  height: 215px;
+}
+.video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 24px 24px 0 0;
+}
+.content {
+  padding: 1rem;
+}
+.content h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+.content .time {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+.time p {
+  color: var(--green-text);
+  font-weight: 600;
+  opacity: 100;
+}
+
 
 /* media queries */
 @media screen and (min-width: 576px) {
@@ -246,7 +292,7 @@ a {
     margin-top: 3rem;
     margin-bottom: 4rem;
   } 
-  .grid_sec {
+  .grid_sec, .feature_sec {
     padding: 5rem 6rem;
   }
 }
@@ -261,14 +307,15 @@ a {
   .hero_content h2 {  
     font-size: 3rem;
   }
+  .section_head {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
   .podcast {
     padding: 3.2rem 8.5rem;
   }
   .podcast .podcast_content {
     padding-bottom: 4.5rem;
-  }
-  .podcast_content h2 {
-    font-size: 2.5rem;
   }
   .podcast .podcast_rating {
     grid-template-columns: repeat(4, 1fr);
@@ -278,10 +325,6 @@ a {
   } 
   .grid_sec {
     padding: 6.5rem 8.5rem;
-  }
-  .grid_sec .grid_head {
-    font-size: 2.5rem;
-    margin-bottom: 2.5rem;
   }
   .grid_sec .grid {
     grid-template-columns: repeat(3, 1fr);
@@ -296,5 +339,14 @@ a {
   .child5 {
     grid-column: span 1;
     grid-row: span 1;
+  }
+  .feature_sec .fetures {
+    gap: 30px;
+  }
+  .content {
+    padding: 24px;
+  }
+  .content h2 {
+    font-size: 24px;
   }
 }
