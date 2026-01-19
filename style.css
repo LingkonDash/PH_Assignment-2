@@ -234,8 +234,7 @@ a {
 
 .fetures .feture_ep {
   border-radius: 24px;
-  max-width: 340px;
-  height: 440px;
+  width: 80%;
   background-color: #250D44;
 }
 .video {
@@ -249,10 +248,10 @@ a {
   border-radius: 24px 24px 0 0;
 }
 .content {
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .content h2 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: var(--text-color);
   margin-bottom: 0.5rem;
@@ -294,6 +293,11 @@ a {
   } 
   .grid_sec, .feature_sec {
     padding: 5rem 6rem;
+  }
+  .fetures .feture_ep {
+    border-radius: 24px;
+    max-width: 340px;
+    height: 440px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -342,11 +346,5 @@ a {
   }
   .feature_sec .fetures {
     gap: 30px;
-  }
-  .content {
-    padding: 24px;
-  }
-  .content h2 {
-    font-size: 24px;
   }
 }
