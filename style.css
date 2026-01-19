@@ -157,16 +157,42 @@ a {
   padding: 12px 20px;
   border-radius: 10000px;
 }
-
 .podcast {
-  text-align: center;
   padding: 2.5rem 1.25rem;
 }
-.podcast h2 {
+.podcast .podcast_content {
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.281);
+  padding-bottom: 2.5rem;
+}
+.podcast_content h2 {
   font-size: 2rem;
   font-weight: bold;
   color: var(--text-color);
   margin-bottom: 16px;
+}
+.podcast .podcast_rating {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center);
+  gap: 2.5rem;
+  margin: 2.5rem auto 0;
+}
+.podcast_rating .ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+.ratings h2 {
+  color: var(--green-text);
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.ratings p {
+  text-transform: uppercase;
 }
 
 
@@ -181,10 +207,20 @@ a {
   .hero {
   background-position: center;
   }
+  .podcast {
+    padding: 2.5rem;
+  }
 }
 @media screen and (min-width: 992px) {
   .navbar { margin-bottom: 4rem;}
   .hero .banner {
     width: 60%;
   }
+  .podcast {
+    padding: 2.5rem 8rem;
+  }
+  .podcast .podcast_rating {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+  } 
 }
