@@ -210,9 +210,10 @@ a {
 
 .hero_content .btns {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 1rem;
 }
 
 .green_btn {
@@ -231,7 +232,7 @@ a {
 }
 
 .podcast {
-  padding: 2.5rem 1.25rem;
+  padding: 2.3rem 1.25rem 2.5rem;
 }
 
 .podcast .podcast_content {
